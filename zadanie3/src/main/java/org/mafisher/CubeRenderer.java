@@ -273,7 +273,7 @@ public class CubeRenderer extends JPanel {
 
     private void drawCrossSection(Graphics2D g2d, int centerX, int centerY, float scale) {
         List<Face> crossSectionFaces = new ArrayList<>();
-        int resolution = 40;
+        int resolution = 15;
 
         float pos = (crossSectionPosition * 2 - 1) * scale;
 
