@@ -161,6 +161,7 @@ public class ImageProcessor {
     }
 
     public BufferedImage sobelFilter(BufferedImage src) {
+        src = toGrayscaleLuminosity(src);
         int w = src.getWidth();
         int h = src.getHeight();
         BufferedImage result = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
